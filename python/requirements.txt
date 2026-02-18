@@ -1,0 +1,45 @@
+# python/requirements.txt
+# All Python dependencies for Demucs v4 TRT tooling.
+#
+# Covers:
+#   export_htdemucs.py   — PyTorch → ONNX export  (CPU sufficient, no GPU needed)
+#   build_engine.py      — ONNX → TRT engine builder
+#   stemsplit.py         — Python reference / validation runner
+#
+# Recommended: use the managed environment instead of pip-installing directly
+#   .\setup.ps1 -Python      (installs micromamba + creates demucs-trt env from environment.yml)
+#
+# Manual install into an existing env:
+#   pip install -r python\requirements.txt
+#
+# Requirements:
+#   CUDA 12.x or 13.x toolkit
+#   TensorRT 10.x  (https://developer.nvidia.com/tensorrt)
+#   Python 3.10+
+
+# ── PyTorch ────────────────────────────────────────────────────────────────
+# CPU build is sufficient for export_htdemucs.py
+# For CUDA-accelerated build_engine.py and stemsplit.py, install via conda:
+#   (environment.yml handles this correctly via the pytorch + nvidia channels)
+torch>=2.1.0
+
+# ── Demucs model + weights ────────────────────────────────────────────────
+# Downloads htdemucs_6s weights automatically on first run of export_htdemucs.py
+demucs
+
+# ── ONNX ──────────────────────────────────────────────────────────────────
+onnx>=1.15.0
+
+# ── TensorRT Python bindings ──────────────────────────────────────────────
+# Must match your TRT C++ install version (the one demucs_v4_trt.dll was built against)
+# Check your version: dir "C:\Program Files\NVIDIA GPU Computing Toolkit\TensorRT*"
+tensorrt==10.15.*
+
+# ── CUDA Python bindings ──────────────────────────────────────────────────
+# Used by build_engine.py for GPU detection (sm arch + TRT version → engine filename)
+pycuda
+
+# ── Audio I/O ─────────────────────────────────────────────────────────────
+# Used by stemsplit.py for loading and saving audio
+soundfile
+numpy

@@ -1,0 +1,30 @@
+# Build outputs — generated locally, never committed
+bin/
+obj/
+dist/
+*.dll
+*.exe
+*.lib
+*.exp
+*.obj
+*.pdb
+
+# config.ini is machine-generated
+config.ini
+
+# Model files
+# Keep the folder structure, ignore the heavy weights
+models/*
+!models/.gitkeep
+*.trt
+*.onnx
+
+# Audio logic: Ignore heavy WAVs, allow MP3 stems for the repo
+*.wav
+*.flac
+*.aac
+!stems/*.mp3
+
+# IDE
+.vs/
+*.user
