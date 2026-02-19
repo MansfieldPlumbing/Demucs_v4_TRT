@@ -92,7 +92,7 @@ Stems land in `.\stems\<song name>\`.
 
 ```powershell
 # 1. Clone and run first-time setup
-git clone https://github.com/yourusername/Demucs_v4_TRT
+git clone https://github.com/mansfieldPlumbing/Demucs_v4_TRT
 cd Demucs_v4_TRT
 .\launch.bat
 
@@ -177,7 +177,7 @@ Python is **not required at runtime.** It is only needed for engine building and
 ## Setup
 
 ```powershell
-git clone https://github.com/yourusername/Demucs_v4_TRT
+git clone https://github.com/mansfieldPlumbing/Demucs_v4_TRT
 cd Demucs_v4_TRT
 
 # Double-click launch.bat — or from a terminal:
