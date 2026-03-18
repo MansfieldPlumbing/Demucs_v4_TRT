@@ -1,0 +1,1148 @@
+PowerShell 7.5.4
+(2026) PS A:\Projects\Demucs_v4_TRT\models> trtexec --loadEngine=demucsv4_sm86_trt10.15.trt --dumpLayerInfo
+&&&& RUNNING TensorRT.trtexec [TensorRT v101501] [b29] # C:\Program Files\NVIDIA GPU Computing Toolkit\TensorRT-10.15.1.29\bin\trtexec.exe --loadEngine=demucsv4_sm86_trt10.15.trt --dumpLayerInfo
+[02/18/2026-13:11:23] [I] TF32 is enabled by default. Add --noTF32 flag to further improve accuracy with some performance cost.
+[02/18/2026-13:11:23] [I] === Model Options ===
+[02/18/2026-13:11:23] [I] Format: *
+[02/18/2026-13:11:23] [I] Model:
+[02/18/2026-13:11:23] [I] Output:
+[02/18/2026-13:11:23] [I]
+[02/18/2026-13:11:23] [I] === System Options ===
+[02/18/2026-13:11:23] [I] Device: 0
+[02/18/2026-13:11:23] [I] DLACore:
+[02/18/2026-13:11:23] [I] Plugins:
+[02/18/2026-13:11:23] [I] setPluginsToSerialize:
+[02/18/2026-13:11:23] [I] dynamicPlugins:
+[02/18/2026-13:11:23] [I] ignoreParsedPluginLibs: 0
+[02/18/2026-13:11:23] [I]
+[02/18/2026-13:11:23] [I] === Inference Options ===
+[02/18/2026-13:11:23] [I] Batch: Explicit
+[02/18/2026-13:11:23] [I] Input inference shapes: model
+[02/18/2026-13:11:23] [I] Iterations: 10
+[02/18/2026-13:11:23] [I] Duration: 3s (+ 200ms warm up)
+[02/18/2026-13:11:23] [I] Sleep time: 0ms
+[02/18/2026-13:11:23] [I] Idle time: 0ms
+[02/18/2026-13:11:23] [I] Inference Streams: 1
+[02/18/2026-13:11:23] [I] ExposeDMA: Disabled
+[02/18/2026-13:11:23] [I] Data transfers: Enabled
+[02/18/2026-13:11:23] [I] Spin-wait: Disabled
+[02/18/2026-13:11:23] [I] Multithreading: Disabled
+[02/18/2026-13:11:23] [I] CUDA Graph: Disabled
+[02/18/2026-13:11:23] [I] Separate profiling: Disabled
+[02/18/2026-13:11:23] [I] Time Deserialize: Disabled
+[02/18/2026-13:11:23] [I] Time Refit: Disabled
+[02/18/2026-13:11:23] [I] NVTX verbosity: 0
+[02/18/2026-13:11:23] [I] Persistent Cache Ratio: 0
+[02/18/2026-13:11:23] [I] Optimization Profile Index: 0
+[02/18/2026-13:11:23] [I] Weight Streaming Budget: 100.000000%
+[02/18/2026-13:11:23] [I] Inputs:
+[02/18/2026-13:11:23] [I] Debug Tensor Save Destinations:
+[02/18/2026-13:11:23] [I] Dump All Debug Tensor in Formats:
+[02/18/2026-13:11:23] [I] === Reporting Options ===
+[02/18/2026-13:11:23] [I] Verbose: Disabled
+[02/18/2026-13:11:23] [I] Averages: 10 inferences
+[02/18/2026-13:11:23] [I] Percentiles: 90,95,99
+[02/18/2026-13:11:23] [I] Dump refittable layers:Disabled
+[02/18/2026-13:11:23] [I] Dump output: Disabled
+[02/18/2026-13:11:23] [I] Profile: Disabled
+[02/18/2026-13:11:23] [I] Export timing to JSON file:
+[02/18/2026-13:11:23] [I] Export output to JSON file:
+[02/18/2026-13:11:23] [I] Export profile to JSON file:
+[02/18/2026-13:11:23] [I]
+[02/18/2026-13:11:23] [I] === Device Information ===
+[02/18/2026-13:11:23] [I] Available Devices:
+[02/18/2026-13:11:23] [I]   Device 0: "NVIDIA GeForce RTX 3090" UUID: GPU-2bdc0e6a-b28d-3d04-b233-da75bc34e8b0
+[02/18/2026-13:11:23] [I] Selected Device: NVIDIA GeForce RTX 3090
+[02/18/2026-13:11:23] [I] Selected Device ID: 0
+[02/18/2026-13:11:23] [I] Selected Device UUID: GPU-2bdc0e6a-b28d-3d04-b233-da75bc34e8b0
+[02/18/2026-13:11:23] [I] Compute Capability: 8.6
+[02/18/2026-13:11:23] [I] SMs: 82
+[02/18/2026-13:11:23] [I] Device Global Memory: 24575 MiB
+[02/18/2026-13:11:23] [I] Shared Memory per SM: 100 KiB
+[02/18/2026-13:11:23] [I] Memory Bus Width: 384 bits (ECC disabled)
+[02/18/2026-13:11:23] [I] Application Compute Clock Rate: 1.71 GHz
+[02/18/2026-13:11:23] [I] Application Memory Clock Rate: 9.751 GHz
+[02/18/2026-13:11:23] [I]
+[02/18/2026-13:11:23] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[02/18/2026-13:11:23] [I]
+[02/18/2026-13:11:23] [I] TensorRT version: 10.15.1
+[02/18/2026-13:11:23] [I] Loading standard plugins
+[02/18/2026-13:11:23] [I] [TRT] Loaded engine size: 157 MiB
+[02/18/2026-13:11:23] [I] Engine deserialized in 0.350218 sec.
+[02/18/2026-13:11:23] [I] [TRT] [MS] Running engine with multi stream info
+[02/18/2026-13:11:23] [I] [TRT] [MS] Number of aux streams is 2
+[02/18/2026-13:11:23] [I] [TRT] [MS] Number of total worker streams is 3
+[02/18/2026-13:11:23] [I] [TRT] [MS] The main stream provided by execute/enqueue calls is the first worker stream
+[02/18/2026-13:11:24] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +412, now: CPU 0, GPU 569 (MiB)
+[02/18/2026-13:11:24] [I] Setting persistentCacheLimit to 0 bytes.
+[02/18/2026-13:11:24] [I] Created execution context with device memory size: 403.305 MiB
+[02/18/2026-13:11:24] [I] Using random values for input input
+[02/18/2026-13:11:24] [I] Input binding for input with dimensions 1x2x343980 is created.
+[02/18/2026-13:11:24] [I] Output binding for output with dimensions 1x6x2x343980 is created.
+[02/18/2026-13:11:24] [I] Layer Information:
+[02/18/2026-13:11:24] [I] [TRT] The profiling verbosity was set to ProfilingVerbosity::kLAYER_NAMES_ONLY when the engine was built, so only the layer names will be returned. Rebuild the engine with ProfilingVerbosity::kDETAILED to get more verbose layer information.
+[02/18/2026-13:11:24] [I] Layers:
+Reformatting CopyNode for Network Input input
+__myl_Move_myl1_0
+__myl_Move_myl1_1
+__myl_Mean_myl1_2
+__myl_Move_myl1_3
+__myl_MoveSubMulMean_myl1_4
+__myl_MulDivSqrtAddDiv_myl1_5
+__myl_Move_myl1_6
+shuffle_between_ONNXTRT_unsqueezeTensor_196_output_and_/tencoder.0/conv/Conv
+/tencoder.0/conv/Conv
+shuffle_after_/tencoder.0/conv/Conv_output
+/Pad_50
+ONNXTRT_squeezeTensor_198
+PWN(PWN(PWN(PWN(PWN(/tencoder.0/Constant_output_0 + ONNXTRT_Broadcast_200, PWN(/tencoder.0/Div)), PWN(/tencoder.0/Erf)), PWN(/tencoder.0/Constant_1_output_0 + ONNXTRT_Broadcast_202, PWN(/tencoder.0/Add))), PWN(/tencoder.0/Mul)), PWN(/tencoder.0/Constant_2_output_0 + ONNXTRT_Broadcast_204, PWN(/tencoder.0/Mul_1)))
+ONNXTRT_unsqueezeTensor_206
+/Reshape_2 + /Reshape_3
+/Pad_1_109
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_206_output_and_/tencoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_206_output_and_/tencoder.0/dconv/layers.0/layers.0.0/Conv
+/tencoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/tencoder.0/dconv/layers.0/layers.0.0/Conv_output
+ONNXTRT_unsqueezeTensor
+shuffle_between_ONNXTRT_unsqueezeTensor_output_and_/Conv_1
+Reformatting CopyNode for Input Tensor 0 to /Conv_1 || /Conv
+/Conv_1 || /Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/Conv_1_output
+shuffle_after_/Conv_1_output
+Reformatting CopyNode for Output Tensor 0 to shuffle_after_/Conv_1_output
+shuffle_after_/Conv_output_copy_input
+shuffle_after_/Conv_output
+/Conv_output copy
+Reformatting CopyNode for Input Tensor 0 to /Reshape_6
+/Reshape_6
+/Slice_2
+/Slice_3
+/Transpose_2 + /Reshape_7
+/Cast_2
+/ReduceMean
+/ReduceMean_1
+Reformatting CopyNode for Input Tensor 0 to PWN(PWN(/Sub), PWN(/Mul_1))
+Reformatting CopyNode for Input Tensor 1 to PWN(PWN(/Sub), PWN(/Mul_1))
+PWN(PWN(/Sub), PWN(/Mul_1))
+/ReduceMean_2
+PWN(PWN(PWN(/Mul_2), PWN(/Div)), PWN(/Sqrt))
+Reformatting CopyNode for Output Tensor 0 to PWN(PWN(PWN(/Mul_2), PWN(/Div)), PWN(/Sqrt))
+PWN(/Constant_50_output_0 + ONNXTRT_Broadcast_188 + /Add, PWN(PWN(/Sub_2), PWN(/Div_1)))
+Reformatting CopyNode for Input Tensor 0 to /encoder.0/conv/Conv
+/encoder.0/conv/Conv
+PWN(PWN(PWN(PWN(PWN(/encoder.0/Constant_output_0 + ONNXTRT_Broadcast_291, PWN(/encoder.0/Div)), PWN(/encoder.0/Erf)), /encoder.0/Constant_1_output_0 + ONNXTRT_Broadcast_293 + /encoder.0/Add), PWN(/encoder.0/Mul)), /encoder.0/Constant_2_output_0 + ONNXTRT_Broadcast_295 + /encoder.0/Mul_1)
+/encoder.0/Transpose + /encoder.0/Reshape
+ONNXTRT_unsqueezeTensor_298
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_298_output_and_/encoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_298_output_and_/encoder.0/dconv/layers.0/layers.0.0/Conv
+/encoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/encoder.0/dconv/layers.0/layers.0.0/Conv_output
+entry^bb^signal^1_myl49_0
+entry^bb^wait^1_myl49_1
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAddDivCastErfCastAddMulMulResh_myl49_2
+__myl_Move_myl49_3
+__myl_ReshCastMean_myl49_4
+__myl_Move_myl49_5
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddDivCastErfCastAddMulMulReshMean_myl49_6
+exit^bb^signal^1_myl49_7
+exit^bb^wait^1_myl49_8
+shuffle_between_ONNXTRT_unsqueezeTensor_226_output_and_/tencoder.0/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.0/dconv/layers.0/layers.0.3/Conv
+/tencoder.0/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/tencoder.0/dconv/layers.0/layers.0.3/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_318_output_and_/encoder.0/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.0/dconv/layers.0/layers.0.3/Conv
+/encoder.0/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/encoder.0/dconv/layers.0/layers.0.3/Conv_output
+__myl_ReshMeanSubMulMean_myl58_0
+__mye8821_myl58_1
+__mye8823_myl58_2
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddResh_myl58_3
+__myl_Move_myl58_4
+__myl_ReshMean_myl58_5
+__myl_Move_myl58_6
+__myl_SubMulMean_myl58_7
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddResh_myl58_8
+exit^bb^signal^1_myl58_9
+exit^bb^wait^1_myl58_10
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_245_output_and_/tencoder.0/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_245_output_and_/tencoder.0/dconv/layers.1/layers.1.0/Conv
+/tencoder.0/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.0/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/tencoder.0/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_337_output_and_/encoder.0/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_337_output_and_/encoder.0/dconv/layers.1/layers.1.0/Conv
+/encoder.0/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/encoder.0/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/encoder.0/dconv/layers.1/layers.1.0/Conv_output
+entry^bb^signal^1_myl69_0
+entry^bb^wait^1_myl69_1
+__myl_ReshMeanSubMulMeanAddSqrtDivMulAddReshMulAdd_myl69_2
+__myl_DivErfAddMulMul_myl69_3
+__myl_Move_myl69_4
+__myl_ReshMean_myl69_5
+__myl_Move_myl69_6
+__myl_SubMulAddSqrtDivMulAddReshMulAddMean_myl69_7
+__myl_DivErfAddMulMul_myl69_8
+exit^bb^signal^1_myl69_9
+exit^bb^wait^1_myl69_10
+shuffle_between_ONNXTRT_unsqueezeTensor_265_output_and_/tencoder.0/dconv/layers.1/layers.1.3/Conv
+/tencoder.0/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/tencoder.0/dconv/layers.1/layers.1.3/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_357_output_and_/encoder.0/dconv/layers.1/layers.1.3/Conv
+/encoder.0/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/encoder.0/dconv/layers.1/layers.1.3/Conv_output
+entry^bb^signal^2_myl76_0
+entry^bb^wait^2_myl76_1
+__myl_IotaCastCastGathMulTranReshReplMul_myl76_2
+__myl_ReshMeanSubMulMean_myl76_3
+__mye11073_myl76_4
+__mye11075_myl76_5
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl76_6
+__myl_Move_myl76_7
+__myl_ReshMean_myl76_8
+__myl_Move_myl76_9
+__myl_SubMulMean_myl76_10
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAdd_myl76_11
+exit^bb^signal^1_myl76_12
+exit^bb^wait^1_myl76_13
+exit^bb^signal^2_myl76_14
+exit^bb^wait^2_myl76_15
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_284_output_and_/tencoder.0/rewrite/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_284_output_and_/tencoder.0/rewrite/Conv
+/tencoder.0/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.0/rewrite/Conv_output
+shuffle_after_/tencoder.0/rewrite/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /encoder.0/rewrite/Conv
+/encoder.0/rewrite/Conv
+Reformatting CopyNode for Output Tensor 0 to /encoder.0/rewrite/Conv
+ONNXTRT_squeezeTensor_286
+PWN(PWN(/tencoder.0/Sigmoid), PWN(/tencoder.0/Mul_2))
+/tencoder.1/Pad_462
+ONNXTRT_unsqueezeTensor_464
+Reformatting CopyNode for Input Tensor 2 to PWN(PWN(PWN(/encoder.0/Sigmoid), PWN(/encoder.0/Mul_2)), PWN(/Add_2))
+PWN(PWN(PWN(/encoder.0/Sigmoid), PWN(/encoder.0/Mul_2)), PWN(/Add_2))
+/encoder.1/conv/Conv + PWN(PWN(PWN(PWN(PWN(/encoder.1/Constant_output_0 + ONNXTRT_Broadcast_559, PWN(/encoder.1/Div)), PWN(/encoder.1/Erf)), /encoder.1/Constant_1_output_0 + ONNXTRT_Broadcast_561 + /encoder.1/Add), PWN(/encoder.1/Mul)), /encoder.1/Constant_2_output_0 + ONNXTRT_Broadcast_563 + /encoder.1/Mul_1)
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_464_output_and_/tencoder.1/conv/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_464_output_and_/tencoder.1/conv/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.1/conv/Conv
+/tencoder.1/conv/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.1/conv/Conv_output
+shuffle_after_/tencoder.1/conv/Conv_output
+ONNXTRT_squeezeTensor_466
+PWN(PWN(PWN(PWN(PWN(/tencoder.1/Constant_13_output_0 + ONNXTRT_Broadcast_468, PWN(/tencoder.1/Div)), PWN(/tencoder.1/Erf)), PWN(/tencoder.1/Constant_14_output_0 + ONNXTRT_Broadcast_470, PWN(/tencoder.1/Add))), PWN(/tencoder.1/Mul)), PWN(/tencoder.1/Constant_15_output_0 + ONNXTRT_Broadcast_472, PWN(/tencoder.1/Mul_1)))
+ONNXTRT_unsqueezeTensor_474
+Reformatting CopyNode for Input Tensor 0 to /encoder.1/Transpose + /encoder.1/Reshape
+/encoder.1/Transpose + /encoder.1/Reshape
+Reformatting CopyNode for Output Tensor 0 to /encoder.1/Transpose + /encoder.1/Reshape
+ONNXTRT_unsqueezeTensor_566
+shuffle_between_ONNXTRT_unsqueezeTensor_566_output_and_/encoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.1/dconv/layers.0/layers.0.0/Conv
+/encoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/encoder.1/dconv/layers.0/layers.0.0/Conv_output
+shuffle_after_/encoder.1/dconv/layers.0/layers.0.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_474_output_and_/tencoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.1/dconv/layers.0/layers.0.0/Conv
+/tencoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.1/dconv/layers.0/layers.0.0/Conv_output
+shuffle_after_/tencoder.1/dconv/layers.0/layers.0.0/Conv_output
+__myl_ReshMeanSubMulMeanAddSqrtDivMulAddReshMulAdd_myl115_0
+__myl_DivErfAddMulMul_myl115_1
+__myl_Move_myl115_2
+__myl_ReshMean_myl115_3
+__myl_Move_myl115_4
+__myl_SubMulAddSqrtDivMulAddReshMulAddMean_myl115_5
+__myl_DivErfAddMulMul_myl115_6
+shuffle_between_ONNXTRT_unsqueezeTensor_494_output_and_/tencoder.1/dconv/layers.0/layers.0.3/Conv
+/tencoder.1/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/tencoder.1/dconv/layers.0/layers.0.3/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_586_output_and_/encoder.1/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.1/dconv/layers.0/layers.0.3/Conv
+/encoder.1/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/encoder.1/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/encoder.1/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tencoder.1/dconv/layers.0/layers.0.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_499...ONNXTRT_unsqueezeTensor_513]}
+__myl_Move_myl125_0
+__myl_Move_myl125_1
+__myl_ReshCastSubMulMeanMean_myl125_2
+__mye8837_myl125_3
+__mye8839_myl125_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl125_5
+__myl_Move_myl125_6
+__myl_ReshCastMean_myl125_7
+__myl_Move_myl125_8
+__myl_SubMulMean_myl125_9
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl125_10
+exit^bb^signal^1_myl125_11
+exit^bb^wait^1_myl125_12
+shuffle_between_ONNXTRT_unsqueezeTensor_513_output_and_/tencoder.1/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.1/dconv/layers.1/layers.1.0/Conv
+/tencoder.1/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.1/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/tencoder.1/dconv/layers.1/layers.1.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_605_output_and_/encoder.1/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.1/dconv/layers.1/layers.1.0/Conv
+/encoder.1/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/encoder.1/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.1/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_518...ONNXTRT_unsqueezeTensor_533]}
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAdd_myl136_0
+__myl_DivCastErfCastAddMulMul_myl136_1
+__myl_Move_myl136_2
+__myl_ReshCastMean_myl136_3
+__myl_Move_myl136_4
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl136_5
+__myl_DivCastErfCastAddMulMul_myl136_6
+shuffle_between_ONNXTRT_unsqueezeTensor_533_output_and_/tencoder.1/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.1/dconv/layers.1/layers.1.3/Conv
+/tencoder.1/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/tencoder.1/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_625_output_and_/encoder.1/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_625_output_and_/encoder.1/dconv/layers.1/layers.1.3/Conv
+/encoder.1/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/encoder.1/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tencoder.1/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_538...ONNXTRT_unsqueezeTensor_552]}
+Reformatting CopyNode for Input Tensor 3 to {ForeignNode[/tencoder.1/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_538...ONNXTRT_unsqueezeTensor_552]}
+__myl_Move_myl147_0
+__myl_Move_myl147_1
+__myl_ReshSubMulMeanMean_myl147_2
+__mye8954_myl147_3
+__mye8956_myl147_4
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl147_5
+__myl_Move_myl147_6
+__myl_ReshMean_myl147_7
+__myl_Move_myl147_8
+__myl_SubMulMean_myl147_9
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAdd_myl147_10
+exit^bb^signal^1_myl147_11
+exit^bb^wait^1_myl147_12
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_552_output_and_/tencoder.1/rewrite/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_552_output_and_/tencoder.1/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.1/rewrite/Conv
+/tencoder.1/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.1/rewrite/Conv_output
+shuffle_after_/tencoder.1/rewrite/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /encoder.1/rewrite/Conv
+/encoder.1/rewrite/Conv
+ONNXTRT_squeezeTensor_554
+Reformatting CopyNode for Input Tensor 0 to PWN(PWN(/tencoder.1/Sigmoid), PWN(/tencoder.1/Mul_2))
+Reformatting CopyNode for Input Tensor 1 to PWN(PWN(/tencoder.1/Sigmoid), PWN(/tencoder.1/Mul_2))
+PWN(PWN(/tencoder.1/Sigmoid), PWN(/tencoder.1/Mul_2))
+/tencoder.2/Pad_705
+ONNXTRT_unsqueezeTensor_707
+PWN(PWN(/encoder.1/Sigmoid), PWN(/encoder.1/Mul_2))
+Reformatting CopyNode for Output Tensor 0 to PWN(PWN(/encoder.1/Sigmoid), PWN(/encoder.1/Mul_2))
+Reformatting CopyNode for Input Tensor 0 to /encoder.2/conv/Conv + PWN(PWN(PWN(PWN(PWN(/encoder.2/Constant_output_0 + ONNXTRT_Broadcast_802, PWN(/encoder.2/Div)), PWN(/encoder.2/Erf)), /encoder.2/Constant_1_output_0 + ONNXTRT_Broadcast_804 + /encoder.2/Add), PWN(/encoder.2/Mul)), /encoder.2/Constant_2_output_0 + ONNXTRT_Broadcast_806 + /encoder.2/Mul_1)
+/encoder.2/conv/Conv + PWN(PWN(PWN(PWN(PWN(/encoder.2/Constant_output_0 + ONNXTRT_Broadcast_802, PWN(/encoder.2/Div)), PWN(/encoder.2/Erf)), /encoder.2/Constant_1_output_0 + ONNXTRT_Broadcast_804 + /encoder.2/Add), PWN(/encoder.2/Mul)), /encoder.2/Constant_2_output_0 + ONNXTRT_Broadcast_806 + /encoder.2/Mul_1)
+shuffle_between_ONNXTRT_unsqueezeTensor_707_output_and_/tencoder.2/conv/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.2/conv/Conv
+/tencoder.2/conv/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.2/conv/Conv_output
+shuffle_after_/tencoder.2/conv/Conv_output
+ONNXTRT_squeezeTensor_709
+PWN(PWN(PWN(PWN(PWN(/tencoder.2/Constant_12_output_0 + ONNXTRT_Broadcast_711, PWN(/tencoder.2/Div)), PWN(/tencoder.2/Erf)), PWN(/tencoder.2/Constant_13_output_0 + ONNXTRT_Broadcast_713, PWN(/tencoder.2/Add))), PWN(/tencoder.2/Mul)), PWN(/tencoder.2/Constant_14_output_0 + ONNXTRT_Broadcast_715, PWN(/tencoder.2/Mul_1)))
+ONNXTRT_unsqueezeTensor_717
+Reformatting CopyNode for Input Tensor 0 to /encoder.2/Transpose + /encoder.2/Reshape
+/encoder.2/Transpose + /encoder.2/Reshape
+Reformatting CopyNode for Output Tensor 0 to /encoder.2/Transpose + /encoder.2/Reshape
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_unsqueezeTensor_809
+ONNXTRT_unsqueezeTensor_809
+shuffle_between_ONNXTRT_unsqueezeTensor_809_output_and_/encoder.2/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.2/dconv/layers.0/layers.0.0/Conv
+/encoder.2/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/encoder.2/dconv/layers.0/layers.0.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_717_output_and_/tencoder.2/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.2/dconv/layers.0/layers.0.0/Conv
+/tencoder.2/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/tencoder.2/dconv/layers.0/layers.0.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tencoder.2/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_722...ONNXTRT_unsqueezeTensor_737]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.2/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_722...ONNXTRT_unsqueezeTensor_737]}
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAdd_myl189_0
+__myl_DivCastErfCastAddMulMul_myl189_1
+__myl_Move_myl189_2
+__myl_ReshCastMean_myl189_3
+__myl_Move_myl189_4
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl189_5
+__myl_DivCastErfCastAddMulMul_myl189_6
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_737_output_and_/tencoder.2/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_737_output_and_/tencoder.2/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.2/dconv/layers.0/layers.0.3/Conv
+/tencoder.2/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.2/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/tencoder.2/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_829_output_and_/encoder.2/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_829_output_and_/encoder.2/dconv/layers.0/layers.0.3/Conv
+/encoder.2/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/encoder.2/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/encoder.2/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tencoder.2/dconv/layers.0/layers.0.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_742...ONNXTRT_unsqueezeTensor_756]}
+__myl_Move_myl202_0
+__myl_Move_myl202_1
+__myl_ReshCastSubMulMeanMean_myl202_2
+__mye8837_myl202_3
+__mye8839_myl202_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl202_5
+__myl_Move_myl202_6
+__myl_ReshCastMean_myl202_7
+__myl_Move_myl202_8
+__myl_SubMulMean_myl202_9
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl202_10
+exit^bb^signal^1_myl202_11
+exit^bb^wait^1_myl202_12
+shuffle_between_ONNXTRT_unsqueezeTensor_756_output_and_/tencoder.2/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.2/dconv/layers.1/layers.1.0/Conv
+/tencoder.2/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/tencoder.2/dconv/layers.1/layers.1.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_848_output_and_/encoder.2/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.2/dconv/layers.1/layers.1.0/Conv
+/encoder.2/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/encoder.2/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tencoder.2/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_761...ONNXTRT_unsqueezeTensor_776]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.2/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_761...ONNXTRT_unsqueezeTensor_776]}
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAdd_myl213_0
+__myl_DivCastErfCastAddMulMul_myl213_1
+__myl_Move_myl213_2
+__myl_ReshCastMean_myl213_3
+__myl_Move_myl213_4
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl213_5
+__myl_DivCastErfCastAddMulMul_myl213_6
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_776_output_and_/tencoder.2/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_776_output_and_/tencoder.2/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.2/dconv/layers.1/layers.1.3/Conv
+/tencoder.2/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/tencoder.2/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_868_output_and_/encoder.2/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_868_output_and_/encoder.2/dconv/layers.1/layers.1.3/Conv
+/encoder.2/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/encoder.2/dconv/layers.1/layers.1.3/Conv_output
+shuffle_after_/encoder.2/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tencoder.2/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_781...ONNXTRT_unsqueezeTensor_795]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.2/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_781...ONNXTRT_unsqueezeTensor_795]}
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tencoder.2/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_781...ONNXTRT_unsqueezeTensor_795]}
+Reformatting CopyNode for Input Tensor 3 to {ForeignNode[/tencoder.2/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_781...ONNXTRT_unsqueezeTensor_795]}
+__myl_Move_myl228_0
+__myl_Move_myl228_1
+__myl_ReshSubMulMeanMean_myl228_2
+__mye8954_myl228_3
+__mye8956_myl228_4
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl228_5
+__myl_Move_myl228_6
+__myl_ReshMean_myl228_7
+__myl_Move_myl228_8
+__myl_SubMulMean_myl228_9
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAdd_myl228_10
+exit^bb^signal^1_myl228_11
+exit^bb^wait^1_myl228_12
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_795_output_and_/tencoder.2/rewrite/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_795_output_and_/tencoder.2/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.2/rewrite/Conv
+/tencoder.2/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.2/rewrite/Conv_output
+shuffle_after_/tencoder.2/rewrite/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /encoder.2/rewrite/Conv
+/encoder.2/rewrite/Conv
+Reformatting CopyNode for Output Tensor 0 to /encoder.2/rewrite/Conv
+ONNXTRT_squeezeTensor_797
+PWN(PWN(/tencoder.2/Sigmoid), PWN(/tencoder.2/Mul_2))
+/tencoder.3/Pad_948
+ONNXTRT_unsqueezeTensor_950
+PWN(PWN(/encoder.2/Sigmoid), PWN(/encoder.2/Mul_2))
+Reformatting CopyNode for Output Tensor 0 to PWN(PWN(/encoder.2/Sigmoid), PWN(/encoder.2/Mul_2))
+Reformatting CopyNode for Input Tensor 0 to /encoder.3/conv/Conv + PWN(PWN(PWN(PWN(PWN(/encoder.3/Constant_output_0 + ONNXTRT_Broadcast_1045, PWN(/encoder.3/Div)), PWN(/encoder.3/Erf)), /encoder.3/Constant_1_output_0 + ONNXTRT_Broadcast_1047 + /encoder.3/Add), PWN(/encoder.3/Mul)), /encoder.3/Constant_2_output_0 + ONNXTRT_Broadcast_1049 + /encoder.3/Mul_1)
+/encoder.3/conv/Conv + PWN(PWN(PWN(PWN(PWN(/encoder.3/Constant_output_0 + ONNXTRT_Broadcast_1045, PWN(/encoder.3/Div)), PWN(/encoder.3/Erf)), /encoder.3/Constant_1_output_0 + ONNXTRT_Broadcast_1047 + /encoder.3/Add), PWN(/encoder.3/Mul)), /encoder.3/Constant_2_output_0 + ONNXTRT_Broadcast_1049 + /encoder.3/Mul_1)
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_950_output_and_/tencoder.3/conv/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_950_output_and_/tencoder.3/conv/Conv
+/tencoder.3/conv/Conv
+shuffle_after_/tencoder.3/conv/Conv_output
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_squeezeTensor_952
+ONNXTRT_squeezeTensor_952
+PWN(PWN(PWN(PWN(PWN(/tencoder.3/Constant_12_output_0 + ONNXTRT_Broadcast_954, PWN(/tencoder.3/Div)), PWN(/tencoder.3/Erf)), PWN(/tencoder.3/Constant_13_output_0 + ONNXTRT_Broadcast_956, PWN(/tencoder.3/Add))), PWN(/tencoder.3/Mul)), PWN(/tencoder.3/Constant_14_output_0 + ONNXTRT_Broadcast_958, PWN(/tencoder.3/Mul_1)))
+ONNXTRT_unsqueezeTensor_960
+/encoder.3/Transpose + /encoder.3/Reshape
+Reformatting CopyNode for Output Tensor 0 to /encoder.3/Transpose + /encoder.3/Reshape
+ONNXTRT_unsqueezeTensor_1052
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_1052_output_and_/encoder.3/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_1052_output_and_/encoder.3/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.3/dconv/layers.0/layers.0.0/Conv
+/encoder.3/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/encoder.3/dconv/layers.0/layers.0.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_960_output_and_/tencoder.3/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.3/dconv/layers.0/layers.0.0/Conv
+/tencoder.3/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.3/dconv/layers.0/layers.0.0/Conv_output
+shuffle_after_/tencoder.3/dconv/layers.0/layers.0.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tencoder.3/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_965...ONNXTRT_unsqueezeTensor_980]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.3/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_965...ONNXTRT_unsqueezeTensor_980]}
+__myl_ReshCastMeanSubMulMean_myl269_0
+__myl_AddSqrtDivMulCastAddReshMulAdd_myl269_1
+__myl_DivCastErfCastAddMulMul_myl269_2
+__myl_Move_myl269_3
+__myl_ReshCastMean_myl269_4
+__myl_Move_myl269_5
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl269_6
+__myl_DivCastErfCastAddMulMul_myl269_7
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_980_output_and_/tencoder.3/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_980_output_and_/tencoder.3/dconv/layers.0/layers.0.3/Conv
+/tencoder.3/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.3/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/tencoder.3/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_1072_output_and_/encoder.3/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_1072_output_and_/encoder.3/dconv/layers.0/layers.0.3/Conv
+/encoder.3/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/encoder.3/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.3/dconv/layers.0/layers.0.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_985...ONNXTRT_unsqueezeTensor_999]}
+__myl_Move_myl280_0
+__myl_Move_myl280_1
+__myl_ReshCastSubMulMeanMean_myl280_2
+__mye8837_myl280_3
+__mye8839_myl280_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl280_5
+__myl_Move_myl280_6
+__myl_ReshCastMean_myl280_7
+__myl_Move_myl280_8
+__myl_SubMulMean_myl280_9
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl280_10
+exit^bb^signal^1_myl280_11
+exit^bb^wait^1_myl280_12
+shuffle_between_ONNXTRT_unsqueezeTensor_999_output_and_/tencoder.3/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.3/dconv/layers.1/layers.1.0/Conv
+/tencoder.3/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.3/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/tencoder.3/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_1091_output_and_/encoder.3/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_1091_output_and_/encoder.3/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /encoder.3/dconv/layers.1/layers.1.0/Conv
+/encoder.3/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/encoder.3/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.3/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_1004...ONNXTRT_unsqueezeTensor_1019]}
+__myl_ReshMeanSubMulMean_myl292_0
+__myl_AddSqrtDivMulAddReshMulAdd_myl292_1
+__myl_DivErfAddMulMul_myl292_2
+__myl_Move_myl292_3
+__myl_ReshMean_myl292_4
+__myl_Move_myl292_5
+__myl_SubMulAddSqrtDivMulAddReshMulAddMean_myl292_6
+__myl_DivErfAddMulMul_myl292_7
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_1019_output_and_/tencoder.3/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_1019_output_and_/tencoder.3/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.3/dconv/layers.1/layers.1.3/Conv
+/tencoder.3/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tencoder.3/dconv/layers.1/layers.1.3/Conv_output
+shuffle_after_/tencoder.3/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_1111_output_and_/encoder.3/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_1111_output_and_/encoder.3/dconv/layers.1/layers.1.3/Conv
+/encoder.3/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/encoder.3/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tencoder.3/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_1024...ONNXTRT_unsqueezeTensor_1038]}
+__myl_Move_myl304_0
+__myl_Move_myl304_1
+__myl_ReshCastSubMulMeanMean_myl304_2
+__mye8946_myl304_3
+__mye8948_myl304_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl304_5
+__myl_Move_myl304_6
+__myl_ReshCastMean_myl304_7
+__myl_Move_myl304_8
+__myl_SubMulMean_myl304_9
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAdd_myl304_10
+exit^bb^signal^1_myl304_11
+exit^bb^wait^1_myl304_12
+shuffle_between_ONNXTRT_unsqueezeTensor_1038_output_and_/tencoder.3/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tencoder.3/rewrite/Conv
+/tencoder.3/rewrite/Conv
+shuffle_after_/tencoder.3/rewrite/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /encoder.3/rewrite/Conv
+/encoder.3/rewrite/Conv
+__myl_Repl_myl311_0
+__myl_IotaCastSlicReshReplReshIotaCastReshReplReshIotaCastReshReplReshConcCastSlicReshReplReshEtc_myl311_1
+__myl_CastAddReshMulSinTranReshReplScat_myl311_2
+__myl_CosTranReshReplScat_myl311_3
+__myl_CastAddReshMulSinTranReshReplScat_myl311_4
+__myl_CosTranReshReplScat_myl311_5
+__myl_ReshTranReshSlicSlicSigmMulTranReshMoveCastMeanSubMulMeanAddSqrtDivMulCastMulAddAddCastMeanEtc_myl311_6
+/crosstransformer/layers.0/self_attn/MatMul_myl311_7
+__myl_TranReshSlicSlicSlicReshTranReshTranReshMove_myl311_8
+_gemm_mha_v2_myl311_9
+/crosstransformer/layers.0/self_attn/Gemm_myl311_10
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_11
+__myl_Fc_myl311_12
+/crosstransformer/layers.0/linear2/MatMul_myl311_13
+__myl_MulAddTranResh_myl311_14
+__myl_Move_myl311_15
+__myl_CastMean_myl311_16
+__myl_Move_myl311_17
+__myl_SubMulMean_myl311_18
+__myl_AddSqrtDivMulCastAddReshMulAddTran_myl311_19
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAddMulAdd_myl311_20
+/crosstransformer/layers_t.1/cross_attn/MatMul_1_myl311_21
+__myl_TranReshSlicSlicReshTranReshTranReshMove_myl311_22
+__myl_ReshSlicSlicSigmMulCast_myl311_23
+__myl_Tran_myl311_24
+__myl_IotaCastReshCastIotaCastReshCastMulCastCastPowCastDivMulSinCosConcReshCastMeanSubMulMeanAddEtc_myl311_25
+/crosstransformer/layers_t.0/self_attn/MatMul_myl311_26
+__myl_TranReshSlicSlicSlicReshTranReshTranReshMove_myl311_27
+_gemm_mha_v2_myl311_28
+/crosstransformer/layers_t.0/self_attn/Gemm_myl311_29
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_30
+__myl_Fc_myl311_31
+/crosstransformer/layers_t.0/linear2/MatMul_myl311_32
+__myl_MulAddTranResh_myl311_33
+__myl_Move_myl311_34
+__myl_CastMean_myl311_35
+__myl_Move_myl311_36
+__myl_SubMulMean_myl311_37
+__myl_AddSqrtDivMulCastAddReshMulAddTran_myl311_38
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAddMulAdd_myl311_39
+/crosstransformer/layers_t.1/cross_attn/MatMul_myl311_40
+_gemm_mha_v2_myl311_41
+/crosstransformer/layers_t.1/cross_attn/Gemm_myl311_42
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_43
+__myl_Fc_myl311_44
+/crosstransformer/layers_t.1/linear2/MatMul_myl311_45
+__myl_MulAddTranResh_myl311_46
+__myl_Move_myl311_47
+__myl_CastMean_myl311_48
+__myl_Move_myl311_49
+__myl_SubMulMean_myl311_50
+__myl_AddSqrtDivMulCastAddReshMulAddTran_myl311_51
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_52
+/crosstransformer/layers_t.2/self_attn/MatMul_myl311_53
+__myl_TranReshSlicSlicReshTranReshTranSlicReshMove_myl311_54
+_gemm_mha_v2_myl311_55
+/crosstransformer/layers_t.2/self_attn/Gemm_myl311_56
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_57
+__myl_Fc_myl311_58
+/crosstransformer/layers_t.2/linear2/MatMul_myl311_59
+__myl_MulAddTranResh_myl311_60
+__myl_Move_myl311_61
+__myl_CastMean_myl311_62
+__myl_Move_myl311_63
+__myl_SubMulMean_myl311_64
+__myl_AddSqrtDivMulCastAddReshMulAddTranCast_myl311_65
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_66
+/crosstransformer/layers.3/cross_attn/MatMul_1_myl311_67
+__myl_TranReshSlicSlicReshTranReshTranReshMove_myl311_68
+/crosstransformer/layers.1/cross_attn/MatMul_myl311_69
+/crosstransformer/layers.1/cross_attn/MatMul_1_myl311_70
+__myl_TranReshSlicSlicReshTranReshTranReshMove_myl311_71
+_gemm_mha_v2_myl311_72
+/crosstransformer/layers.1/cross_attn/Gemm_myl311_73
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_74
+__myl_Fc_myl311_75
+/crosstransformer/layers.1/linear2/MatMul_myl311_76
+__myl_MulAddTranResh_myl311_77
+__myl_Move_myl311_78
+__myl_CastMean_myl311_79
+__myl_Move_myl311_80
+__myl_SubMulMean_myl311_81
+__myl_AddSqrtDivMulCastAddReshMulAddTran_myl311_82
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_83
+/crosstransformer/layers.2/self_attn/MatMul_myl311_84
+__myl_TranReshSlicSlicReshTranReshTranSlicReshMove_myl311_85
+_gemm_mha_v2_myl311_86
+/crosstransformer/layers.2/self_attn/Gemm_myl311_87
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_88
+__myl_Fc_myl311_89
+/crosstransformer/layers.2/linear2/MatMul_myl311_90
+__myl_MulAddTranResh_myl311_91
+__myl_Move_myl311_92
+__myl_CastMean_myl311_93
+__myl_Move_myl311_94
+__myl_SubMulMean_myl311_95
+__myl_AddSqrtDivMulCastAddReshMulAddTranCast_myl311_96
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_97
+/crosstransformer/layers.3/cross_attn/MatMul_myl311_98
+_gemm_mha_v2_myl311_99
+/crosstransformer/layers.3/cross_attn/Gemm_myl311_100
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_101
+__myl_Fc_myl311_102
+/crosstransformer/layers.3/linear2/MatMul_myl311_103
+__myl_MulAddTranResh_myl311_104
+__myl_Move_myl311_105
+__myl_CastMean_myl311_106
+__myl_Move_myl311_107
+__myl_SubMulMean_myl311_108
+__myl_AddSqrtDivMulCastAddReshMulAddTran_myl311_109
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_110
+/crosstransformer/layers.4/self_attn/MatMul_myl311_111
+__myl_TranReshSlicSlicReshTranReshTranSlicReshMove_myl311_112
+_gemm_mha_v2_myl311_113
+/crosstransformer/layers.4/self_attn/Gemm_myl311_114
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl311_115
+__myl_Fc_myl311_116
+/crosstransformer/layers.4/linear2/MatMul_myl311_117
+__myl_MulAddTranResh_myl311_118
+__myl_Move_myl311_119
+__myl_CastMean_myl311_120
+__myl_Move_myl311_121
+__myl_SubMulMean_myl311_122
+__myl_AddSqrtDivMulCastAddReshMulAddTranReshTranAdd_myl311_123
+/decoder.0/rewrite/Conv
+Reformatting CopyNode for Output Tensor 0 to /decoder.0/rewrite/Conv
+PWN(PWN(/decoder.0/Sigmoid), PWN(/decoder.0/Mul))
+Reformatting CopyNode for Input Tensor 0 to /decoder.0/Transpose + /decoder.0/Reshape
+/decoder.0/Transpose + /decoder.0/Reshape
+Reformatting CopyNode for Output Tensor 0 to /decoder.0/Transpose + /decoder.0/Reshape
+ONNXTRT_unsqueezeTensor_4580
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4580_output_and_/decoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4580_output_and_/decoder.0/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /decoder.0/dconv/layers.0/layers.0.0/Conv
+/decoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/decoder.0/dconv/layers.0/layers.0.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/crosstransformer/layers_t.3/cross_attn/Cast_2...ONNXTRT_unsqueezeTensor_4600]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/crosstransformer/layers_t.3/cross_attn/Cast_2...ONNXTRT_unsqueezeTensor_4600]}
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/crosstransformer/layers_t.3/cross_attn/Cast_2...ONNXTRT_unsqueezeTensor_4600]}
+Reformatting CopyNode for Input Tensor 3 to {ForeignNode[/crosstransformer/layers_t.3/cross_attn/Cast_2...ONNXTRT_unsqueezeTensor_4600]}
+__myl_CastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl328_0
+/crosstransformer/layers_t.3/cross_attn/MatMul_1_myl328_1
+__mye29407_myl328_2
+__mye29409_myl328_3
+__myl_TranReshSlicSlicReshTranReshTranReshMove_myl328_4
+__mye29411_myl328_5
+__myl_CastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl328_6
+/crosstransformer/layers_t.3/cross_attn/MatMul_myl328_7
+__mye29413_myl328_8
+_gemm_mha_v2_myl328_9
+/crosstransformer/layers_t.3/cross_attn/Gemm_myl328_10
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl328_11
+__myl_Fc_myl328_12
+/crosstransformer/layers_t.3/linear2/MatMul_myl328_13
+__myl_MulAddTranResh_myl328_14
+__myl_Move_myl328_15
+__myl_CastMean_myl328_16
+__myl_Move_myl328_17
+__myl_SubMulMean_myl328_18
+__myl_AddSqrtDivMulCastAddReshMulAddTran_myl328_19
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl328_20
+/crosstransformer/layers_t.4/self_attn/MatMul_myl328_21
+__myl_TranReshSlicSlicReshTranReshTranSlicReshMove_myl328_22
+_gemm_mha_v2_myl328_23
+/crosstransformer/layers_t.4/self_attn/Gemm_myl328_24
+__myl_MulAddReshCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl328_25
+__myl_Fc_myl328_26
+/crosstransformer/layers_t.4/linear2/MatMul_myl328_27
+__myl_MulAddTranResh_myl328_28
+__myl_Move_myl328_29
+__myl_CastMean_myl328_30
+__myl_Move_myl328_31
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddAddMean_myl328_32
+__myl_ReshCastMeanSubMulMean_myl328_33
+__myl_AddSqrtDivMulCastAddReshMulAdd_myl328_34
+__myl_DivCastErfCastAddMulMul_myl328_35
+shuffle_between_ONNXTRT_unsqueezeTensor_4698_output_and_/tdecoder.0/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.0/rewrite/Conv
+/tdecoder.0/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.0/rewrite/Conv_output
+shuffle_after_/tdecoder.0/rewrite/Conv_output
+ONNXTRT_squeezeTensor_4700
+PWN(PWN(/tdecoder.0/Sigmoid), PWN(/tdecoder.0/Mul))
+ONNXTRT_unsqueezeTensor_4705
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4705_output_and_/tdecoder.0/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4705_output_and_/tdecoder.0/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.0/dconv/layers.0/layers.0.0/Conv
+/tdecoder.0/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.0/dconv/layers.0/layers.0.0/Conv_output
+shuffle_after_/tdecoder.0/dconv/layers.0/layers.0.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4600_output_and_/decoder.0/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4600_output_and_/decoder.0/dconv/layers.0/layers.0.3/Conv
+/decoder.0/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/decoder.0/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tdecoder.0/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4710...ONNXTRT_unsqueezeTensor_4619]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tdecoder.0/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4710...ONNXTRT_unsqueezeTensor_4619]}
+__myl_Move_myl349_0
+__myl_ReshCastMean_myl349_1
+__myl_Move_myl349_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl349_3
+__myl_DivCastErfCastAddMulMul_myl349_4
+__myl_Move_myl349_5
+__myl_Move_myl349_6
+__myl_ReshCastSubMulMeanMean_myl349_7
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl349_8
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4725_output_and_/tdecoder.0/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4725_output_and_/tdecoder.0/dconv/layers.0/layers.0.3/Conv
+/tdecoder.0/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.0/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/tdecoder.0/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4619_output_and_/decoder.0/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4619_output_and_/decoder.0/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /decoder.0/dconv/layers.1/layers.1.0/Conv
+/decoder.0/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/decoder.0/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tdecoder.0/dconv/layers.0/layers.0.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4730...ONNXTRT_unsqueezeTensor_4639]}
+__myl_Move_myl361_0
+__myl_ReshMean_myl361_1
+__myl_Move_myl361_2
+__myl_SubMulMean_myl361_3
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddResh_myl361_4
+__myl_ReshMeanSubMulMean_myl361_5
+__myl_AddSqrtDivMulAddReshMulAdd_myl361_6
+__myl_DivErfAddMulMul_myl361_7
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4744_output_and_/tdecoder.0/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4744_output_and_/tdecoder.0/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.0/dconv/layers.1/layers.1.0/Conv
+/tdecoder.0/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.0/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/tdecoder.0/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4639_output_and_/decoder.0/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4639_output_and_/decoder.0/dconv/layers.1/layers.1.3/Conv
+/decoder.0/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/decoder.0/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tdecoder.0/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4749.../decoder.0/Reshape_1 + /decoder.0/Transpose_1]}
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tdecoder.0/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4749.../decoder.0/Reshape_1 + /decoder.0/Transpose_1]}
+__myl_Move_myl374_0
+__myl_ReshCastMean_myl374_1
+__myl_Move_myl374_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl374_3
+__myl_DivCastErfCastAddMulMul_myl374_4
+__myl_Move_myl374_5
+__myl_Move_myl374_6
+__myl_ReshCastSubMulMeanMean_myl374_7
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl374_8
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4764_output_and_/tdecoder.0/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4764_output_and_/tdecoder.0/dconv/layers.1/layers.1.3/Conv
+/tdecoder.0/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.0/dconv/layers.1/layers.1.3/Conv_output
+shuffle_after_/tdecoder.0/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /decoder.0/conv_tr/ConvTranspose
+/decoder.0/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 0 to PWN(PWN(PWN(PWN(PWN(PWN(/decoder.0/Constant_9_output_0 + ONNXTRT_Broadcast_4692, PWN(/decoder.0/Div)), PWN(/decoder.0/Erf)), /decoder.0/Constant_10_output_0 + ONNXTRT_Broadcast_4694 + /decoder.0/Add_1), PWN(/decoder.0/Mul_1)), /decoder.0/Constant_11_output_0 + ONNXTRT_Broadcast_4696 + /decoder.0/Mul_2), PWN(/decoder.1/Add))
+PWN(PWN(PWN(PWN(PWN(PWN(/decoder.0/Constant_9_output_0 + ONNXTRT_Broadcast_4692, PWN(/decoder.0/Div)), PWN(/decoder.0/Erf)), /decoder.0/Constant_10_output_0 + ONNXTRT_Broadcast_4694 + /decoder.0/Add_1), PWN(/decoder.0/Mul_1)), /decoder.0/Constant_11_output_0 + ONNXTRT_Broadcast_4696 + /decoder.0/Mul_2), PWN(/decoder.1/Add))
+Reformatting CopyNode for Input Tensor 0 to /decoder.1/rewrite/Conv
+/decoder.1/rewrite/Conv
+Reformatting CopyNode for Output Tensor 0 to /decoder.1/rewrite/Conv
+PWN(PWN(/decoder.1/Sigmoid), PWN(/decoder.1/Mul))
+/decoder.1/Transpose + /decoder.1/Reshape
+Reformatting CopyNode for Output Tensor 0 to /decoder.1/Transpose + /decoder.1/Reshape
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_unsqueezeTensor_4830
+ONNXTRT_unsqueezeTensor_4830
+shuffle_between_ONNXTRT_unsqueezeTensor_4830_output_and_/decoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /decoder.1/dconv/layers.0/layers.0.0/Conv
+/decoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/decoder.1/dconv/layers.0/layers.0.0/Conv_output
+shuffle_after_/decoder.1/dconv/layers.0/layers.0.0/Conv_output
+__myl_Move_myl397_0
+__myl_ReshMean_myl397_1
+__myl_Move_myl397_2
+__myl_SubMulMean_myl397_3
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAdd_myl397_4
+__myl_ReshMeanSubMulMeanAddSqrtDivMulAddReshMulAdd_myl397_5
+__myl_DivErfAddMulMul_myl397_6
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.0/conv_tr/ConvTranspose
+/tdecoder.0/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_squeezeTensor_4785
+ONNXTRT_squeezeTensor_4785
+Reformatting CopyNode for Input Tensor 0 to PWN(PWN(PWN(PWN(PWN(PWN(/tdecoder.0/Constant_5_output_0 + ONNXTRT_Broadcast_4820, PWN(/tdecoder.0/Div)), PWN(/tdecoder.0/Erf)), PWN(/tdecoder.0/Constant_6_output_0 + ONNXTRT_Broadcast_4822, PWN(/tdecoder.0/Add_2))), PWN(/tdecoder.0/Mul_1)), PWN(/tdecoder.0/Constant_7_output_0 + ONNXTRT_Broadcast_4824, PWN(/tdecoder.0/Mul_2))), PWN(/tdecoder.1/Add))
+PWN(PWN(PWN(PWN(PWN(PWN(/tdecoder.0/Constant_5_output_0 + ONNXTRT_Broadcast_4820, PWN(/tdecoder.0/Div)), PWN(/tdecoder.0/Erf)), PWN(/tdecoder.0/Constant_6_output_0 + ONNXTRT_Broadcast_4822, PWN(/tdecoder.0/Add_2))), PWN(/tdecoder.0/Mul_1)), PWN(/tdecoder.0/Constant_7_output_0 + ONNXTRT_Broadcast_4824, PWN(/tdecoder.0/Mul_2))), PWN(/tdecoder.1/Add))
+ONNXTRT_unsqueezeTensor_4948
+shuffle_between_ONNXTRT_unsqueezeTensor_4948_output_and_/tdecoder.1/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.1/rewrite/Conv
+/tdecoder.1/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.1/rewrite/Conv_output
+shuffle_after_/tdecoder.1/rewrite/Conv_output
+ONNXTRT_squeezeTensor_4950
+PWN(PWN(/tdecoder.1/Sigmoid), PWN(/tdecoder.1/Mul))
+ONNXTRT_unsqueezeTensor_4955
+shuffle_between_ONNXTRT_unsqueezeTensor_4955_output_and_/tdecoder.1/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.1/dconv/layers.0/layers.0.0/Conv
+/tdecoder.1/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/tdecoder.1/dconv/layers.0/layers.0.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4850_output_and_/decoder.1/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4850_output_and_/decoder.1/dconv/layers.0/layers.0.3/Conv
+/decoder.1/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/decoder.1/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/decoder.1/dconv/layers.0/layers.0.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tdecoder.1/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4960...ONNXTRT_unsqueezeTensor_4869]}
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tdecoder.1/dconv/layers.0/layers.0.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4960...ONNXTRT_unsqueezeTensor_4869]}
+__myl_Move_myl424_0
+__myl_ReshCastMean_myl424_1
+__myl_Move_myl424_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl424_3
+__myl_DivCastErfCastAddMulMul_myl424_4
+__myl_Move_myl424_5
+__myl_Move_myl424_6
+__myl_ReshCastSubMulMeanMean_myl424_7
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl424_8
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4975_output_and_/tdecoder.1/dconv/layers.0/layers.0.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4975_output_and_/tdecoder.1/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.1/dconv/layers.0/layers.0.3/Conv
+/tdecoder.1/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.1/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/tdecoder.1/dconv/layers.0/layers.0.3/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_4869_output_and_/decoder.1/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /decoder.1/dconv/layers.1/layers.1.0/Conv
+/decoder.1/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/decoder.1/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tdecoder.1/dconv/layers.0/layers.0.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4980...ONNXTRT_unsqueezeTensor_4889]}
+__myl_Move_myl436_0
+__myl_ReshCastMean_myl436_1
+__myl_Move_myl436_2
+__myl_SubMulMean_myl436_3
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl436_4
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAdd_myl436_5
+__myl_DivCastErfCastAddMulMul_myl436_6
+shuffle_between_ONNXTRT_unsqueezeTensor_4994_output_and_/tdecoder.1/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.1/dconv/layers.1/layers.1.0/Conv
+/tdecoder.1/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/tdecoder.1/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_4889_output_and_/decoder.1/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_4889_output_and_/decoder.1/dconv/layers.1/layers.1.3/Conv
+/decoder.1/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/decoder.1/dconv/layers.1/layers.1.3/Conv_output
+shuffle_after_/decoder.1/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/tdecoder.1/dconv/layers.1/layers.1.1/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_4999.../decoder.1/Reshape_1 + /decoder.1/Transpose_1]}
+__myl_Move_myl447_0
+__myl_ReshCastMean_myl447_1
+__myl_Move_myl447_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddMean_myl447_3
+__myl_DivCastErfCastAddMulMul_myl447_4
+__myl_Move_myl447_5
+__myl_Move_myl447_6
+__myl_ReshCastSubMulMeanMean_myl447_7
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl447_8
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5014_output_and_/tdecoder.1/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5014_output_and_/tdecoder.1/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.1/dconv/layers.1/layers.1.3/Conv
+/tdecoder.1/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/tdecoder.1/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /decoder.1/conv_tr/ConvTranspose
+/decoder.1/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 1 to PWN(PWN(PWN(PWN(PWN(PWN(/decoder.1/Constant_9_output_0 + ONNXTRT_Broadcast_4942, PWN(/decoder.1/Div)), PWN(/decoder.1/Erf)), /decoder.1/Constant_10_output_0 + ONNXTRT_Broadcast_4944 + /decoder.1/Add_1), PWN(/decoder.1/Mul_1)), /decoder.1/Constant_11_output_0 + ONNXTRT_Broadcast_4946 + /decoder.1/Mul_2), PWN(/decoder.2/Add))
+PWN(PWN(PWN(PWN(PWN(PWN(/decoder.1/Constant_9_output_0 + ONNXTRT_Broadcast_4942, PWN(/decoder.1/Div)), PWN(/decoder.1/Erf)), /decoder.1/Constant_10_output_0 + ONNXTRT_Broadcast_4944 + /decoder.1/Add_1), PWN(/decoder.1/Mul_1)), /decoder.1/Constant_11_output_0 + ONNXTRT_Broadcast_4946 + /decoder.1/Mul_2), PWN(/decoder.2/Add))
+/decoder.2/rewrite/Conv
+PWN(PWN(/decoder.2/Sigmoid), PWN(/decoder.2/Mul))
+/decoder.2/Transpose + /decoder.2/Reshape
+Reformatting CopyNode for Output Tensor 0 to /decoder.2/Transpose + /decoder.2/Reshape
+ONNXTRT_unsqueezeTensor_5080
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5080_output_and_/decoder.2/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5080_output_and_/decoder.2/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /decoder.2/dconv/layers.0/layers.0.0/Conv
+/decoder.2/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/decoder.2/dconv/layers.0/layers.0.0/Conv_output
+Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/tdecoder.1/dconv/layers.1/layers.1.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_5019...ONNXTRT_unsqueezeTensor_5100]}
+__myl_Move_myl468_0
+__myl_ReshCastMean_myl468_1
+__myl_Move_myl468_2
+__myl_SubMulMean_myl468_3
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulCastAddResh_myl468_4
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAddDivCastErfCastAddMulMulResh_myl468_5
+/tdecoder.1/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_squeezeTensor_5035
+ONNXTRT_squeezeTensor_5035
+PWN(PWN(PWN(PWN(PWN(PWN(/tdecoder.1/Constant_5_output_0 + ONNXTRT_Broadcast_5070, PWN(/tdecoder.1/Div)), PWN(/tdecoder.1/Erf)), PWN(/tdecoder.1/Constant_6_output_0 + ONNXTRT_Broadcast_5072, PWN(/tdecoder.1/Add_2))), PWN(/tdecoder.1/Mul_1)), PWN(/tdecoder.1/Constant_7_output_0 + ONNXTRT_Broadcast_5074, PWN(/tdecoder.1/Mul_2))), PWN(/tdecoder.2/Add))
+ONNXTRT_unsqueezeTensor_5198
+shuffle_between_ONNXTRT_unsqueezeTensor_5198_output_and_/tdecoder.2/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.2/rewrite/Conv
+/tdecoder.2/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.2/rewrite/Conv_output
+shuffle_after_/tdecoder.2/rewrite/Conv_output
+ONNXTRT_squeezeTensor_5200
+Reformatting CopyNode for Input Tensor 0 to PWN(PWN(/tdecoder.2/Sigmoid), PWN(/tdecoder.2/Mul))
+Reformatting CopyNode for Input Tensor 1 to PWN(PWN(/tdecoder.2/Sigmoid), PWN(/tdecoder.2/Mul))
+PWN(PWN(/tdecoder.2/Sigmoid), PWN(/tdecoder.2/Mul))
+ONNXTRT_unsqueezeTensor_5205
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5205_output_and_/tdecoder.2/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5205_output_and_/tdecoder.2/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.2/dconv/layers.0/layers.0.0/Conv
+/tdecoder.2/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/tdecoder.2/dconv/layers.0/layers.0.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_5100_output_and_/decoder.2/dconv/layers.0/layers.0.3/Conv
+/decoder.2/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/decoder.2/dconv/layers.0/layers.0.3/Conv_output
+__myl_Move_myl492_0
+__myl_ReshCastMean_myl492_1
+__myl_Move_myl492_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddDivCastErfCastAddMulMulReshMean_myl492_3
+__myl_Move_myl492_4
+__myl_Move_myl492_5
+__myl_ReshCastSubMulMeanMean_myl492_6
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulCastAddReshCast_myl492_7
+shuffle_between_ONNXTRT_unsqueezeTensor_5225_output_and_/tdecoder.2/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.2/dconv/layers.0/layers.0.3/Conv
+/tdecoder.2/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/tdecoder.2/dconv/layers.0/layers.0.3/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_5119_output_and_/decoder.2/dconv/layers.1/layers.1.0/Conv
+/decoder.2/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/decoder.2/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/decoder.2/dconv/layers.1/layers.1.0/Conv_output
+__myl_Move_myl501_0
+__myl_ReshMean_myl501_1
+__myl_Move_myl501_2
+__myl_SubMulMean_myl501_3
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddResh_myl501_4
+__myl_ReshMeanSubMulMeanAddSqrtDivMulAddReshMulAdd_myl501_5
+__myl_DivErfAddMulMul_myl501_6
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5244_output_and_/tdecoder.2/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5244_output_and_/tdecoder.2/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.2/dconv/layers.1/layers.1.0/Conv
+/tdecoder.2/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.2/dconv/layers.1/layers.1.0/Conv_output
+shuffle_after_/tdecoder.2/dconv/layers.1/layers.1.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_5139_output_and_/decoder.2/dconv/layers.1/layers.1.3/Conv
+/decoder.2/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/decoder.2/dconv/layers.1/layers.1.3/Conv_output
+__myl_Move_myl511_0
+__myl_ReshMean_myl511_1
+__myl_Move_myl511_2
+__myl_SubMulAddSqrtDivMulAddReshMulAddMean_myl511_3
+__myl_DivErfAddMulMul_myl511_4
+__myl_Move_myl511_5
+__myl_Move_myl511_6
+__myl_ReshSubMulMeanMean_myl511_7
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAddReshTran_myl511_8
+shuffle_between_ONNXTRT_unsqueezeTensor_5264_output_and_/tdecoder.2/dconv/layers.1/layers.1.3/Conv
+/tdecoder.2/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/tdecoder.2/dconv/layers.1/layers.1.3/Conv_output
+Reformatting CopyNode for Input Tensor 0 to /decoder.2/conv_tr/ConvTranspose
+/decoder.2/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 1 to PWN(PWN(PWN(PWN(PWN(PWN(/decoder.2/Constant_9_output_0 + ONNXTRT_Broadcast_5192, PWN(/decoder.2/Div)), PWN(/decoder.2/Erf)), /decoder.2/Constant_10_output_0 + ONNXTRT_Broadcast_5194 + /decoder.2/Add_1), PWN(/decoder.2/Mul_1)), /decoder.2/Constant_11_output_0 + ONNXTRT_Broadcast_5196 + /decoder.2/Mul_2), PWN(/decoder.3/Add))
+PWN(PWN(PWN(PWN(PWN(PWN(/decoder.2/Constant_9_output_0 + ONNXTRT_Broadcast_5192, PWN(/decoder.2/Div)), PWN(/decoder.2/Erf)), /decoder.2/Constant_10_output_0 + ONNXTRT_Broadcast_5194 + /decoder.2/Add_1), PWN(/decoder.2/Mul_1)), /decoder.2/Constant_11_output_0 + ONNXTRT_Broadcast_5196 + /decoder.2/Mul_2), PWN(/decoder.3/Add))
+/decoder.3/rewrite/Conv
+Reformatting CopyNode for Output Tensor 0 to /decoder.3/rewrite/Conv
+PWN(PWN(/decoder.3/Sigmoid), PWN(/decoder.3/Mul))
+Reformatting CopyNode for Input Tensor 0 to /decoder.3/Transpose + /decoder.3/Reshape
+/decoder.3/Transpose + /decoder.3/Reshape
+ONNXTRT_unsqueezeTensor_5330
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5330_output_and_/decoder.3/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5330_output_and_/decoder.3/dconv/layers.0/layers.0.0/Conv
+/decoder.3/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/decoder.3/dconv/layers.0/layers.0.0/Conv_output
+shuffle_after_/decoder.3/dconv/layers.0/layers.0.0/Conv_output
+entry^bb^signal^1_myl530_0
+entry^bb^wait^1_myl530_1
+__myl_Move_myl530_2
+__myl_ReshMean_myl530_3
+__myl_Move_myl530_4
+__myl_SubMulMean_myl530_5
+__myl_AddSqrtDivMulAddReshMulAddSlicSigmSlicMulMulAdd_myl530_6
+__myl_ReshMeanSubMulMeanAddSqrtDivMulAddReshMulAdd_myl530_7
+__myl_DivErfAddMulMul_myl530_8
+exit^bb^signal^1_myl530_9
+exit^bb^wait^1_myl530_10
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.2/conv_tr/ConvTranspose
+/tdecoder.2/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_squeezeTensor_5285
+ONNXTRT_squeezeTensor_5285
+PWN(PWN(PWN(PWN(PWN(PWN(/tdecoder.2/Constant_4_output_0 + ONNXTRT_Broadcast_5320, PWN(/tdecoder.2/Div)), PWN(/tdecoder.2/Erf)), PWN(/tdecoder.2/Constant_5_output_0 + ONNXTRT_Broadcast_5322, PWN(/tdecoder.2/Add_1))), PWN(/tdecoder.2/Mul_1)), PWN(/tdecoder.2/Constant_6_output_0 + ONNXTRT_Broadcast_5324, PWN(/tdecoder.2/Mul_2))), PWN(/tdecoder.3/Add))
+ONNXTRT_unsqueezeTensor_5442
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5442_output_and_/tdecoder.3/rewrite/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5442_output_and_/tdecoder.3/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.3/rewrite/Conv
+/tdecoder.3/rewrite/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.3/rewrite/Conv_output
+shuffle_after_/tdecoder.3/rewrite/Conv_output
+ONNXTRT_squeezeTensor_5444
+PWN(PWN(/tdecoder.3/Sigmoid), PWN(/tdecoder.3/Mul))
+ONNXTRT_unsqueezeTensor_5449
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5449_output_and_/tdecoder.3/dconv/layers.0/layers.0.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5449_output_and_/tdecoder.3/dconv/layers.0/layers.0.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.3/dconv/layers.0/layers.0.0/Conv
+/tdecoder.3/dconv/layers.0/layers.0.0/Conv
+shuffle_after_/tdecoder.3/dconv/layers.0/layers.0.0/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_5350_output_and_/decoder.3/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to /decoder.3/dconv/layers.0/layers.0.3/Conv
+/decoder.3/dconv/layers.0/layers.0.3/Conv
+shuffle_after_/decoder.3/dconv/layers.0/layers.0.3/Conv_output
+__myl_Move_myl555_0
+__myl_ReshCastMean_myl555_1
+__myl_Move_myl555_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddDivCastErfCastAddMulMulReshMean_myl555_3
+__myl_ReshCastMeanSubMulMean_myl555_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulCastAddReshCast_myl555_5
+shuffle_between_ONNXTRT_unsqueezeTensor_5469_output_and_/tdecoder.3/dconv/layers.0/layers.0.3/Conv
+/tdecoder.3/dconv/layers.0/layers.0.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.3/dconv/layers.0/layers.0.3/Conv_output
+shuffle_after_/tdecoder.3/dconv/layers.0/layers.0.3/Conv_output
+shuffle_between_ONNXTRT_unsqueezeTensor_5369_output_and_/decoder.3/dconv/layers.1/layers.1.0/Conv
+/decoder.3/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/decoder.3/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/tdecoder.3/dconv/layers.0/layers.0.4/Constant_1_output_0 + ONNXTRT_unsqueezeTensor_5474...ONNXTRT_unsqueezeTensor_5389]}
+entry^bb^signal^1_myl564_0
+entry^bb^wait^1_myl564_1
+__myl_Move_myl564_2
+__myl_ReshCastMean_myl564_3
+__myl_Move_myl564_4
+__myl_SubMulMean_myl564_5
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAddResh_myl564_6
+__myl_ReshCastMeanSubMulMeanAddSqrtDivMulCastAddReshMulAdd_myl564_7
+__myl_DivCastErfCastAddMulMul_myl564_8
+exit^bb^signal^1_myl564_9
+exit^bb^wait^1_myl564_10
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5488_output_and_/tdecoder.3/dconv/layers.1/layers.1.0/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5488_output_and_/tdecoder.3/dconv/layers.1/layers.1.0/Conv
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.3/dconv/layers.1/layers.1.0/Conv
+/tdecoder.3/dconv/layers.1/layers.1.0/Conv
+shuffle_after_/tdecoder.3/dconv/layers.1/layers.1.0/Conv_output
+Reformatting CopyNode for Input Tensor 0 to shuffle_between_ONNXTRT_unsqueezeTensor_5389_output_and_/decoder.3/dconv/layers.1/layers.1.3/Conv
+shuffle_between_ONNXTRT_unsqueezeTensor_5389_output_and_/decoder.3/dconv/layers.1/layers.1.3/Conv
+/decoder.3/dconv/layers.1/layers.1.3/Conv
+shuffle_after_/decoder.3/dconv/layers.1/layers.1.3/Conv_output
+__myl_Move_myl574_0
+__myl_ReshCastMean_myl574_1
+__myl_Move_myl574_2
+__myl_SubMulAddSqrtDivMulCastAddReshMulAddDivCastErfCastAddMulMulReshMean_myl574_3
+__myl_ReshCastMeanSubMulMean_myl574_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulCastAddReshTran_myl574_5
+shuffle_between_ONNXTRT_unsqueezeTensor_5508_output_and_/tdecoder.3/dconv/layers.1/layers.1.3/Conv
+/tdecoder.3/dconv/layers.1/layers.1.3/Conv
+Reformatting CopyNode for Input Tensor 0 to shuffle_after_/tdecoder.3/dconv/layers.1/layers.1.3/Conv_output
+shuffle_after_/tdecoder.3/dconv/layers.1/layers.1.3/Conv_output
+/decoder.3/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 4 to {ForeignNode[/Constant_111_output_0...ONNXTRT_unsqueezeTensor_5697]}
+__myl_Move_myl581_0
+__myl_Move_myl581_1
+__myl_ReshCastMean_myl581_2
+__myl_Move_myl581_3
+__myl_SubMulMean_myl581_4
+__myl_AddSqrtDivMulCastAddReshMulAddSlicSigmSlicMulMulAdd_myl581_5
+__myl_ReshReshSlicReshMulAdd_myl581_6
+__myl_ReshTran_myl581_7
+__myl_ReplReplConcReplReplConcReshSlicSlic_myl581_8
+__mye14568_myl581_9
+__mye14570_myl581_10
+__myl_ReshReshGtrAddDivAtanMulMulAddSqrtLtAddAddSeleSeleSinMulCosMulConc_myl581_11
+exit^bb^signal^1_myl581_12
+exit^bb^wait^1_myl581_13
+/ConstantOfShape_4_output_0 [empty tensor]
+Reformatting CopyNode for Input Tensor 0 to /tdecoder.3/conv_tr/ConvTranspose
+/tdecoder.3/conv_tr/ConvTranspose
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_squeezeTensor_5529
+ONNXTRT_squeezeTensor_5529
+/Reshape_16_copy_input
+/Reshape_16
+/ConvTranspose
+Reformatting CopyNode for Input Tensor 0 to ONNXTRT_squeezeTensor_5699
+ONNXTRT_squeezeTensor_5699
+Reformatting CopyNode for Input Tensor 1 to PWN(/Mul_9)
+PWN(/Mul_9)
+/ConstantOfShape_4_output_0 copy
+/Squeeze_2 + /Reshape_15_copy_input
+/Squeeze_2 + /Reshape_15
+/Slice_11
+__myl_ReshReshMulAddAdd_myl598_0
+
+Bindings:
+input
+output
+[02/18/2026-13:11:24] [I] Starting inference
+[02/18/2026-13:11:27] [I] Warmup completed 1 queries over 200 ms
+[02/18/2026-13:11:27] [I] Timing trace has 28 queries over 3.36833 s
+[02/18/2026-13:11:27] [I]
+[02/18/2026-13:11:27] [I] === Trace details ===
+[02/18/2026-13:11:27] [I] Trace averages of 10 runs:
+[02/18/2026-13:11:27] [I] Average on 10 runs - GPU latency: 120.136 ms - Host latency: 121.621 ms (enqueue 66.3113 ms)
+[02/18/2026-13:11:27] [I] Average on 10 runs - GPU latency: 115.418 ms - Host latency: 116.907 ms (enqueue 69.3969 ms)
+[02/18/2026-13:11:27] [I]
+[02/18/2026-13:11:27] [I] === Performance summary ===
+[02/18/2026-13:11:27] [I] Throughput: 8.31274 qps
+[02/18/2026-13:11:27] [I] Latency: min = 114.152 ms, max = 133.617 ms, mean = 120.21 ms, median = 117.238 ms, percentile(90%) = 131.085 ms, percentile(95%) = 131.515 ms, percentile(99%) = 133.617 ms
+[02/18/2026-13:11:27] [I] Enqueue Time: min = 11.5076 ms, max = 87.0873 ms, mean = 69.1293 ms, median = 68.7345 ms, percentile(90%) = 82.0427 ms, percentile(95%) = 82.4851 ms, percentile(99%) = 87.0873 ms
+[02/18/2026-13:11:27] [I] H2D Latency: min = 0.227295 ms, max = 0.229492 ms, mean = 0.227559 ms, median = 0.227539 ms, percentile(90%) = 0.227798 ms, percentile(95%) = 0.228027 ms, percentile(99%) = 0.229492 ms
+[02/18/2026-13:11:27] [I] GPU Compute Time: min = 112.668 ms, max = 132.132 ms, mean = 118.724 ms, median = 115.753 ms, percentile(90%) = 129.601 ms, percentile(95%) = 130.03 ms, percentile(99%) = 132.132 ms
+[02/18/2026-13:11:27] [I] D2H Latency: min = 1.25732 ms, max = 1.27905 ms, mean = 1.25867 ms, median = 1.25745 ms, percentile(90%) = 1.2583 ms, percentile(95%) = 1.2688 ms, percentile(99%) = 1.27905 ms
+[02/18/2026-13:11:27] [I] Total Host Walltime: 3.36833 s
+[02/18/2026-13:11:27] [I] Total GPU Compute Time: 3.32427 s
+[02/18/2026-13:11:27] [W] * GPU compute time is unstable, with coefficient of variance = 5.19667%.
+[02/18/2026-13:11:27] [W]   If not already in use, locking GPU clock frequency or adding --useSpinWait may improve the stability.
+[02/18/2026-13:11:27] [I] Explanations of the performance metrics are printed in the verbose logs.
+[02/18/2026-13:11:27] [I]
+&&&& PASSED TensorRT.trtexec [TensorRT v101501] [b29] # C:\Program Files\NVIDIA GPU Computing Toolkit\TensorRT-10.15.1.29\bin\trtexec.exe --loadEngine=demucsv4_sm86_trt10.15.trt --dumpLayerInfo
+(2026) PS A:\Projects\Demucs_v4_TRT\models>
